@@ -13,7 +13,12 @@ User Stories-
 
 Technologies Used
 --------------------
-React, Html, Trello, Netlify, JSX, JWT, CSS, Express
+Express
+Mongoose
+MongoDB
+Passport
+Bcrypt
+JWT
 
 WireFrame
 --------------------
