@@ -61,6 +61,19 @@ app.get('/cards/search', async (req, res) => {
 }
 });
 
+app.get('/cards/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        const response = await axios.get(`https://api.magicthegathering.io/v1/cards/${id}`);
+        const card = response.data.card;
+        res.json(card);
+    }catch(error) {
+        console.error(error);
+        res.status(500).json({ error: 'Server Error'});
+    }
+    }
+);
+
 ///////////////////////////////
 // LISTENER
 ////////////////////////////////
