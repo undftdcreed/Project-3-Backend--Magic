@@ -9,7 +9,7 @@ const { PORT = 4000 } = process.env;
 const express = require("express");
 const axios = require("axios");
 const morgan = require("morgan");
-
+const authController = require("./controllers/auth")
 //middleware
 // app.use(cors());
 // app.use(morgan("dev"));
